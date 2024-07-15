@@ -46,7 +46,6 @@
             align-items: center;
             flex-direction: column;
             margin-bottom: 20px;
-            user-select: none; /* Ngăn chọn ảnh */
         }
         .avatar img {
             border-radius: 50%;
@@ -54,7 +53,6 @@
             height: 150px;
             object-fit: cover;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            pointer-events: none; /* Ngăn kéo ảnh */
         }
         .avatar p {
             margin-top: 10px;
@@ -70,8 +68,8 @@
     </header>
     <div class="container">
         <div class="avatar">
-            <img src="./asset/img/avatar.jpg" alt="Nguyễn Đức Tâm">
-            <p>Nguyễn Đức Tâm</p>
+            <img src="./asset/img/avatar.png" alt="Nguyễn Đức Tâm">
+            <p>Nguyễn ./asset/img/avatar.png
         </div>
         <section class="profile">
             <h2>Giới Thiệu Bản Thân</h2>
@@ -95,16 +93,5 @@
             </ul>
         </section>
     </div>
-    <script>
-        // Ngăn nhấp chuột phải vào ảnh
-        document.addEventListener('DOMContentLoaded', (event) => {
-            const images = document.querySelectorAll('img');
-            images.forEach(img => {
-                img.oncontextmenu = function() {
-                    return false;
-                }
-            });
-        });
-    </script>
 </body>
 </html>
