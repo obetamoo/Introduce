@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.container {
+    padding: 20px;
+}
+.profile, .portfolio, .contact {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h2 {
+    color: #4CAF50;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    margin: 5px 0;
+}
+.contact ul li {
+    margin: 10px 0;
+}
+.avatar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    user-select: none; /* Ngăn chọn ảnh */
+}
+.avatar img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    pointer-events: none; /* Ngăn kéo ảnh */
+}
+.avatar p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
